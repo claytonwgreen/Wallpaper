@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.personal.newWallpaper.plist</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StartInterval</key>
+    <integer>INTERVAL_REPLACE</integer>
+
+    <key>StandardErrorPath</key>
+    <string>DIRECTORY_REPLACE/stderr.log</string>
+
+    <key>StandardOutPath</key>
+    <string>DIRECTORY_REPLACE/stdout.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>UNSPLASH_ACCESS_KEY</key>
+      <string>API_KEY_REPLACE</string>
+      <key>PHOTO_QUERY</key>
+      <string>QUERY_REPLACE</string>
+      <key>PATH</key>
+      <string><![CDATA[/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin]]></string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>DIRECTORY_REPLACE</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/bash</string>
+      <string>newWallpaper.sh</string>
+    </array>
+
+  </dict>
+</plist>
